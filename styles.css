@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Titan+One);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Titan One;
+    /*background-color: #bdfeff;*/
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100.01vh;
+    /* text-align: center;
+    padding: 1rem; */
+}
+
+.section {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.show {
+    opacity: 1;
+}
+
+.title {
+    animation: title 3s;
+}
+
+.habitat {
+    animation: helloAnim 1.5s;
+}
+
+.knuck {
+    animation: knuck 3s;
+}
+
+@keyframes title {
+    0% { opacity: 0; }
+    75% { opacity: 1; }
+}
+
+@keyframes helloAnim {
+    0% {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes knuck {
+    0% {
+        transform: translateX(-75%)
+    }
+}
